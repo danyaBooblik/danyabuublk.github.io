@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.redak{
+	font-size: 16px;
+	text-align: justify;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+}
+#left{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#right{
+  float: right;
+  padding-left: 10px;
+}
+
+ol {
+	margin-left: 10px;
+	font-size: 16px;
+	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 16px;
+}
+h3 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+

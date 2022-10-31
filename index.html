@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="csss/style.css">
+	<title>Безопасность Web-ресурсов</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <figure class="image"><img class="is-rounded" src="https://w7.pngwing.com/pngs/420/619/png-transparent-computer-icons-computer-security-access-icon-logo-grass-internet-security.png">
+    </a></figure>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a id="in1" href="index.html" class="navbar-item">
+        Главная
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Продолжим по теме
+        </a>
+        <div class="navbar-dropdown">
+          <a href="bezop.html" class="navbar-item">
+            Веб-ресурс
+          </a>
+          <a href="classveb.html" class="navbar-item">
+            Классификация защиты веб-ресурсов
+          </a>
+          <a href="whitebox.html" class="navbar-item">
+            Метод «белого ящика» 
+          </a>
+          <a href="blackbox.html" class="navbar-item">
+            Метод «черного ящика»
+          </a>
+          <a href="sql.html" class="navbar-item">
+            Защита от SQL-инъекций
+          </a>
+          <a href="end.html" class="navbar-item">
+            Заключение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container is-fluid">
+<div class="columns">
+  <div class="column is-one-fifth">
+      <aside class="menu">
+        <p class="menu-label">
+          Оглавление
+        </p>
+        <ul class="menu-list">
+          <li><a style="color: black;" href="index.html">Главная</a></li>
+        <li><a style="color: black;" href="index.html#in2">О чем пойдет речь..</a></li>
+        <li><a style="color: black;" href="index.html#in4">Защита онлайн-сервисов</a></li>
+        <li><a style="color: black;" href="index.html#in4">Классификация методов и алгоритмов</a></li>
+        <li><a style="color: black;" href="index.html#fot">О нас</a></li>
+        </ul>
+      </aside>
+  </div>
+  <div class="column" style="margin-right: 10px;">
+    <p>
+      <h3 class="title is-3" id="in2">О чем пойдет речь..</h3>
+      <p class="redak">Популярность Интернет-ресурсов значительно возросла за последние годы. Приложения, основанные на веб-технологиях, стали востребованы в решении задач из
+      разных отраслей и постепенно стали вытеснять приложения, основанные на других
+      технологиях.</p>
+      <figure class="image has-ratio" id="left">
+        <img src="cont/block1.jpg" style=" width: 400px; height: 400px;">
+      </figure>
+
+      <p class="redak">Это привело к усложнению веб-приложений в плане структуры, архитектуры и
+      реализации, к тому же в веб-приложениях стала использоваться распределенная
+      архитектура.
+      Такое усложнение выдвинуло новые требования к вопросам безопасности вебприложений. Известно, что безопасность — это ключевой момент разработки вебприложения и разработчики должны уделять достаточно внимания этому вопросу.
+      Если меры безопасности будут заложены в приложение на раннем этапе разработки, то это значительно сэкономит время и средства, по сравнению с вариантом,
+      когда безопасность будет добавляться в готовое или практически готовое приложение.
+      Вопросы безопасности и надежности являются актуальными на всех этапах
+      разработки. И хотя по этому поводу было написано множество документов и статей, но мало что изменилось — программисты продолжают писать программы,
+      учитывая вопросы безопасности не в полной мере.</p>
+
+      <p>
+        <h3 class="subtitle is-4" id="in3">Защита онлайн-сервисов</h3>
+        <p class="redak">Защита онлайн-сервисов — это достаточно трудоемкий процесс, учитывая
+        внутреннюю сложность Интернета. Веб-экосистема является разнородной и включает в себя большое количество различных компонентов и технологий, поэтому пути атаки на веб-приложения невероятно велики, например, к ним можно отнести:
+        <ol class="is-lower-alpha">
+          <li>недостатки безопасности в веб-браузере могут раскрывать аутентификационные и конфиденциальные данные, хранящиеся на страницах;</li>
+          <li>уязвимости веб-протоколов могут нарушить защищенность и целостность сеанса связи;</li>
+          <li>ошибки в коде веб-приложения могут привести к встраиванию вредоносного содержимого в веб-страницы.</li>
+        </ol>
+      </p>
+      </p>
+      <p>
+        <h3 class="subtitle is-4" id="in4">Классификация методов и алгоритмов</h3>
+        <p class="redak">
+          В данном обзоре мы попробуем собрать и классифицировать существующие предложения в области методов и алгоритмов обеспечения безопасности в Интернете, при этом охватив множество различных тем, таких как:
+          <ol class="is-lower-alpha">
+            <li>безопасность JavaScript</li>
+            <li>безопасность браузера</li>
+            <li>безопасность веб-приложений</li>
+            <li>анализ веб-протоколов</li>
+          </ol>
+        </p>
+      </p>
+    </p>
+</div>
+</div>
+</div>
+<a style="color: black;" href="index.html#in1"><footer class="footer is-primary"  style="background-color: lightgray;">
+  <div class="content has-text-centered">
+    <p id="fot" style="font-size: 24px; text-align: center;">
+      Сделано бубликом, с любовью)
+    </p>
+  </div>
+</footer></a>
+</body>
+</html>

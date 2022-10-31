@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="csss/style.css">
+	<title>Безопасность Web-ресурсов</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <figure class="image"><img class="is-rounded" src="https://w7.pngwing.com/pngs/420/619/png-transparent-computer-icons-computer-security-access-icon-logo-grass-internet-security.png">
+    </a></figure>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+        Главная
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Продолжим по теме
+        </a>
+        <div class="navbar-dropdown">
+          <a href="bezop.html" class="navbar-item">
+            Веб-ресурс
+          </a>
+          <a href="classveb.html" class="navbar-item">
+            Классификация защиты веб-ресурсов
+          </a>
+          <a href="whitebox.html" class="navbar-item">
+            Метод «белого ящика» 
+          </a>
+          <a href="blackbox.html" class="navbar-item">
+            Метод «черного ящика»
+          </a>
+          <a href="sql.html" class="navbar-item">
+            Защита от SQL-инъекций
+          </a>
+          <a href="end.html" class="navbar-item">
+            Заключение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container is-fluid">
+<div class="columns">
+  <div class="column is-one-fifth">
+      <aside class="menu">
+        <p id="in1" class="menu-label">
+          Оглавление
+        </p>
+        <ul class="menu-list">
+          <li><a style="color: black;" href="index.html">Главная</a></li>
+          <li><a style="color: black;" href="whitebox.html#in2">Методы «черного ящика»</a></li>
+          <li><a style="color: black;" href="whitebox.html#in3">Заключение</a></li>
+          <li><a style="color: black;" href="whitebox.html#fot">О нас</a></li>
+        </ul>
+      </aside>
+  </div>
+  <div class="column" style="margin-right: 10px;">
+    <p>
+      <h3 class="title is-3" id="in2">Методы «черного ящика»</h3>
+      <p class="redak">
+        Аналогично группе подходов «белого ящика», для проведения различия между различными подходами «черного ящика» требуются дополнительные детали. Общее различие между подходами «черного ящика» заключается в предмете наблюдения. Просмотр веб-приложения в виде черного ящика означает, что подходы к защите имеют доступ только к входным и выходным данным приложения. В работе рассмотрен данный подход и выделены его существенные недостатки.
+      </p>
+      <figure class="image has-ratio" id="right">
+          <img src="cont/blackbox.png" style=" width: 500px; height: 400px;">
+      </figure> 
+      <p class="redak">
+        Преимущество реализации черных ящиков заключается в том, что такие подходы могут быть развернуты для любого веб-приложения (даже если исходный код недоступен). Тем не менее, более глубокое понимание того, как приложение должно себя вести, может оказаться невозможным с подходами «черного ящика», что потенциально может привести к более низкой скорости обнаружения атаки. Поэтому данные методы не будут рассмотрены в данном обзоре. Далее будут описаны актуальные методы защиты от существующих видов атак на веб-ресурсы.
+
+      </p>
+      <h3 class="title is-3" id="in3">Заключение</h3>
+      <p class="redak">
+        Главным достоинством метода «черного ящика» является минимизация возможного влияния заинтересованных лиц на принятие неэффективных решений. Метод нацеливает на выделение специального аналитического центра, который делает заключение исключительно по разработкам независимых экспертов, оценивающих перспективы принятия решений по определенному перечню проблем.
+      </p>
+    </p>
+</div>
+</div>
+</div>
+<a style="color: black;" href="blackbox.html#in1"><footer class="footer is-primary"  style="background-color: lightgray;">
+  <div class="content has-text-centered">
+    <p id="fot" style="font-size: 24px; text-align: center;">
+      Сделано бубликом, с любовью)
+    </p>
+  </div>
+</footer></a>
+</body>
+</html>

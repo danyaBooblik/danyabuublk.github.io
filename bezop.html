@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="csss/style.css">
+	<title>Безопасность Web-ресурсов</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <figure class="image"><img class="is-rounded" src="https://w7.pngwing.com/pngs/420/619/png-transparent-computer-icons-computer-security-access-icon-logo-grass-internet-security.png">
+    </a></figure>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+        Главная
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Продолжим по теме
+        </a>
+        <div class="navbar-dropdown">
+          <a href="bezop.html" class="navbar-item">
+            Веб-ресурс
+          </a>
+          <a href="classveb.html" class="navbar-item">
+            Классификация защиты веб-ресурсов
+          </a>
+          <a href="whitebox.html" class="navbar-item">
+            Метод «белого ящика» 
+          </a>
+          <a href="blackbox.html" class="navbar-item">
+            Метод «черного ящика»
+          </a>
+          <a href="sql.html" class="navbar-item">
+            Защита от SQL-инъекций
+          </a>
+          <a href="end.html" class="navbar-item">
+            Заключение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container is-fluid">
+<div class="columns">
+  <div class="column is-one-fifth">
+      <aside class="menu">
+        <p id="in1" class="menu-label">
+          Оглавление
+        </p>
+        <ul class="menu-list">
+          <li><a style="color: black;" href="index.html">Главная</a></li>
+          <li><a style="color: black;" href="bezop.html#in2">Веб-приложение это..</a></li>
+          <li><a style="color: black;" href="bezop.html#in3">Модель исполнения веб-приложений</a></li>
+          <li><a style="color: black;" href="bezop.html#in4">Заключение</a></li>
+          <li><a style="color: black;" href="bezop.html#fot">О нас</a></li>
+        </ul>
+      </aside>
+  </div>
+  <div class="column" style="margin-right: 10px;">
+    <p>
+      <p>
+        <h3 class="title is-3" id="in2">Веб-приложение это..</h3>
+        <p class="redak">
+          Веб-приложение — это клиент-серверное приложение, которое выполняется навеб-платформе. Она является неотъемлемой частью современной веб-экосистемы, которая обеспечивает динамичное предоставление информации и услуг.
+        </p>
+        <figure class="image has-ratio" id="left">
+          <img src="cont/weptool.png" style=" width: 512px; height: 175px;">
+        </figure>
+        <p class="redak">
+          Веб-приложение состоит из кода выполняемого, как на
+          стороне сервера, так и на стороне клиента. На стороне сервера, веб-приложение принимает входные данные от пользователя через HTTP-запросы и взаимодействует с локальной файловой системой, базой данных или другими компонентами для доступа к данным и поиска информации. После сервер возвращает выходные данные (т. е. сгенерированные HTMLстраницы), которые отправляются клиенту через HTTP-ответы. На клиентской стороне отображаются HTML-страницы, а клиентский код (т. е. JavaScript), встроенный в ответы HTTP, выполняется веб-браузером.
+        </p>
+        <p class="redak">
+          Клиентский код также может взаимодействовать с серверным кодом асинхронно, не мешая отображению существующей HTML-страницы через AJAX и динамически обновлять страницу. В настоящее время в целях содействия быстрой
+          разработке приложений разрабатываются некоторые библиотеки и платформы программирования (например, Ruby on Rails и Django). Например, большинство платформ веб-разработки предоставляют функции управления сеансами, которые разработчики могут напрямую использовать для управления веб-сеансами. В статье авторами были рассмотрены ключевые характеристики работы веб-ресурсов.
+        </p>
+        
+          <h3 class="subtitle is-4" id="in3">Модель исполнения веб-приложений</h3>
+          <p class="redak">
+          Модель исполнения веб-приложений кардинально отличается от традиционных приложений. Разработка веб-приложений также сталкивается с трудностями, с которыми не приходится сталкиваться при разработке традиционных приложений.
+          <figure class="image has-ratio" id="right">
+            <img src="cont/weptool2.png" style=" width: 300px; height: 300px;">
+          </figure>
+        </p>
+        <p class="redak">
+          <ol type="a">
+            <li>Во-первых, в открытой веб-среде вводимые пользователем данные потенциально опасны и никогда нельзя им доверять. Проверка вводимых данных является важной частью веб-приложения для выявления и очистки ненадежных вводимых пользователем данных. Хотя проверка входных данных является важной функцией, необходимой для всех типов приложений, ее реализация в веб-приложениях является гораздо более сложной из-за уникальных особенностей технологий вебразработки.</li>
+            <li>Во-вторых, связь между клиентом и веб-приложением осуществляется посредством протокола HTTP. В результате несколько входных данных от одного и того же пользователя будут восприниматься как различные, независимые пользователи веб-приложения. Для коррекции таких действий веб-приложение должно использовать управление сеансами для сопоставления веб-запросов от одного пользователя в веб-сеанс.</li>
+          </ol>
+        </p>
+        <p class="redak">
+          <h3 class="subtitle is-4" id="in4">Заключение</h3>
+          По итогу опираясь на рассмотренную архитектуру и характеристики можно выявить несколько мест, где злоумышленник сможет провести свою атаку и навредить веб-ресурсу:
+          <ol type="1">
+            <li>анализ и защита входов в веб-ресурс (мониторинг вводимых пользователем данных);</li>
+            <li>защита самого веб-приложения (анализ исходных кодов); </li>
+            <li>защита выходов (анализ возвращаемых HTTP-ответов, анализ доступа БД);</li>
+            <li>анализ клиентской стороны (браузер).</li>
+          </ol>
+        </p>
+    </p>
+</div>
+</div>
+</div>
+<a style="color: black;" href="bezop.html#in1"><footer class="footer is-primary"  style="background-color: lightgray;">
+  <div class="content has-text-centered">
+    <p id="fot" style="font-size: 24px; text-align: center;">
+      Сделано бубликом, с любовью)
+    </p>
+  </div>
+</footer></a>
+</body>
+</html>

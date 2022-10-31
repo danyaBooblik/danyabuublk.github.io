@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="csss/style.css">
+	<title>Безопасность Web-ресурсов</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <figure class="image"><img class="is-rounded" src="https://w7.pngwing.com/pngs/420/619/png-transparent-computer-icons-computer-security-access-icon-logo-grass-internet-security.png">
+    </a></figure>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+        Главная
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Продолжим по теме
+        </a>
+        <div class="navbar-dropdown">
+          <a href="bezop.html" class="navbar-item">
+            Веб-ресурс
+          </a>
+          <a href="classveb.html" class="navbar-item">
+            Классификация защиты веб-ресурсов
+          </a>
+          <a href="whitebox.html" class="navbar-item">
+            Метод «белого ящика» 
+          </a>
+          <a href="blackbox.html" class="navbar-item">
+            Метод «черного ящика»
+          </a>
+          <a href="sql.html" class="navbar-item">
+            Защита от SQL-инъекций
+          </a>
+          <a href="end.html" class="navbar-item">
+            Заключение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container is-fluid">
+<div class="columns">
+  <div class="column is-one-fifth">
+      <aside class="menu">
+        <p id="in1" class="menu-label">
+          Оглавление
+        </p>
+        <ul class="menu-list">
+          <li><a style="color: black;" href="index.html">Главная</a></li>
+          <li><a style="color: black;" href="sql.html#in2">SQL инъекции это..</a></li>
+          <li><a style="color: black;" href="sql.html#in3">Заключение</a></li>
+          <li><a style="color: black;" href="sql.html#fot">О нас</a></li>
+        </ul>
+      </aside>
+  </div>
+  <div class="column" style="margin-right: 10px;">
+    <p>
+      <h3 class="title is-3" id="in2">SQL инъекции это..</h3>
+      <p class="redak">
+        Одну из серьезных угроз для веб-приложений представляют так называемые SQLинъекции. SQL-инъекции являются одной из наиболее распространенных атак на веб-приложения, использующие базу данных, поэтому наибольшее количество методов защиты разработано специально для обхода атак на основе SQL-инъекций. В работе авторы рассмотрели основные векторы проведения данной атаки и привели некие примеры.
+      </p>
+      <figure class="image has-ratio" id="left">
+          <img src="cont/sql.png" style=" width: 500px; height: 400px;">
+      </figure> 
+      <p class="redak">
+        Фактические сведения о подходе, используемые в таких средствах защиты, различаются в зависимости от взгляда разработчика на причины возникновения уязвимостей. Однако уязвимости, связанные с SQL-инъекциями, традиционно объясняются отсутствием надлежащей защиты входных данных. Рассмотрим следующий упрощенный фрагмент кода PHP:
+        $mails = mysqli_query($con, “SELECT MailSubject FROM Mails WHERE MailDate > ‘”.$_GET["date"].”’”); Оставив в стороне проблемы с аутентификацией, такой код может использоваться для извлечения списка сообщений электронной почты, полученных после указанной даты. Опасность этого кода заключается в, казалось бы, безвредном GET HTTP-запросе c параметром «date». Нежелательные последствия могут возникнуть, если посетитель веб-сайта подставит следующее значение для даты: 2000-01-01‘ OR 1=1 В этом случае будет создан следующий SQL-запрос: SELECT MailSubject FROM Mails WHERE MailDate > ‘2000-01- 01’ OR 1=1 Это приведет к включению в список всех объектов электронной почты. Более разрушительные результаты могут быть достигнуты с помощью другой структуры для значения «date», например, включение символа «точка с запятой» для выполнения более чем одной команды SQL. Хотя это пример небезопасного кода, аналогичные фрагменты кода часто встречаются по историческим причинам. Первоначально риски безопасности не были полностью поняты, и формирование SQL-запросов «на лету» путем объединения строк выглядело простым и естественным.
+      </p>
+      <h3 class="title is-3" id="in3">Заключение</h3>
+      <p class="redak">
+        В последние годы было разработано много инструментов для обнаружения и предотвращения атак SQL-инъекций. Рассмотрим наиболее известные из них. AMNESIA является средством обнаружения и предотвращения для атак SQLинъекций. Для этой цели она использует статический анализ и мониторинг выполнения запросов. Инструмент строит модель законных запросов для каждой точки доступа, т. е. когда SQL-запросы выдаются ядру базы данных, инструмент контролирует приложение во время выполнения, чтобы гарантировать, что все генерируемые запросы соответствуют статически сгенерированной модели. SQLRand использует набор инструкций рандомизации для обнаружения и прерывания запросов внедренного кода, и каждое SQL ключевое слово соединяется со случайным целым числом, чтобы ввести в заблуждение злоумышленника. Предложенная методика предотвращает атаки SQL-инъекций в хранимых процедурах путем комбинирования статического анализа кода приложения с проверкой выполнения.
+      </p>
+    </p>
+</div>
+</div>
+</div>
+<a style="color: black;" href="sql.html#in1"><footer class="footer is-primary"  style="background-color: lightgray;">
+  <div class="content has-text-centered">
+    <p id="fot" style="font-size: 24px; text-align: center;">
+      Сделано бубликом, с любовью)
+    </p>
+  </div>
+</footer></a>
+</body>
+</html>

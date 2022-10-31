@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="csss/style.css">
+	<title>Безопасность Web-ресурсов</title>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <figure class="image"><img class="is-rounded" src="https://w7.pngwing.com/pngs/420/619/png-transparent-computer-icons-computer-security-access-icon-logo-grass-internet-security.png">
+    </a></figure>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+        Главная
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Продолжим по теме
+        </a>
+        <div class="navbar-dropdown">
+          <a href="bezop.html" class="navbar-item">
+            Веб-ресурс
+          </a>
+          <a href="classveb.html" class="navbar-item">
+            Классификация защиты веб-ресурсов
+          </a>
+          <a href="whitebox.html" class="navbar-item">
+            Метод «белого ящика» 
+          </a>
+          <a href="blackbox.html" class="navbar-item">
+            Метод «черного ящика»
+          </a>
+          <a href="sql.html" class="navbar-item">
+            Защита от SQL-инъекций
+          </a>
+          <a href="end.html" class="navbar-item">
+            Заключение
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container is-fluid">
+<div class="columns">
+  <div class="column is-one-fifth">
+      <aside class="menu">
+        <p id="in1" class="menu-label">
+          Оглавление
+        </p>
+        <ul class="menu-list">
+          <li><a style="color: black;" href="index.html">Главная</a></li>
+          <li><a style="color: black;" href="whitebox.html#in2">Методы «белого ящика»</a></li>
+          <li><a style="color: black;" href="whitebox.html#in3">Заключение</a></li>
+          <li><a style="color: black;" href="whitebox.html#fot">О нас</a></li>
+        </ul>
+      </aside>
+  </div>
+  <div class="column" style="margin-right: 10px;">
+    <p>
+      <h3 class="title is-3" id="in2">Методы «белого ящика»</h3>
+      <p class="redak">
+        Описание подхода к защите как метода «Белого ящика», не является весьма информативным и может быть использовано только для быстрого определения общей применимости этого подхода. Поэтому следует предоставить дополнительную информацию, чтобы различать различные методы «белого ящика». В статье авторы описали различные подходы «белого ящика», а также рассмотрели недостатки данной концепции. Например, анализ исходного кода, используемый подходы «белого ящика», может работать до выполнения кода (статический анализ) или во время выполнения (динамический анализ). Статический анализ подразумевает, что обнаруженные проблемы должны быть устранены до того, как приложение будет фактически использовано в производственной среде.
+      </p>
+      <figure class="image has-ratio" id="right">
+          <img src="cont/whutebox.jpg" style=" width: 500px; height: 400px;">
+      </figure> 
+      <p class="redak">
+        Результаты такого анализа можно рассматривать как рекомендации по устранению выявленных проблем. Хотя в некоторых случаях обнаруженные проблемы могут быть устранены автоматически, использование неавтоматического статического анализа кода все еще может быть полезным на этапе разработки приложения. Динамический анализ отслеживает исполнение кода приложения во время работы и может реагировать более активно (например, предотвращать выполнение некоторых ветвей кода). Анализ времени выполнения также позволяет анализатору иметь доступ к данным, предоставленным пользователем. Такая гибкость обычно достигается путем расширения существующего интерпретатора языка программирования или стандартных библиотек. Существуют также и гибридные подходы анализа, которые могут автоматически устранять обнаруженные проблемы, привлекая разработчиков к рассмотрению обнаруженных уязвимостей и принятию неких решений. Другая особенность анализа времени выполнения заключается в том, что наличие доступа к исходному коду позволяет создать модель предполагаемого поведения приложения. 
+      </p>
+      <h3 class="title is-3" id="in3">Заключение</h3>
+      <p class="redak">
+        Такая модель может затем использоваться на этапе принятия решения о вторжении для проверки того, является ли выставленное поведение приложения ожидаемым. Подходы «белого ящика» также могут быть сосредоточены на конкретных аспектах применения, таких как используемые API (вместо анализа самого приложения), приближенная структура веб-страниц. Независимо от деталей используемого анализа, из-за необходимости доступа к исходникам приложений использование методов «белого ящика» концептуально ограничено либо программным обеспечением с открытым исходным кодом, либо приложениями, разработанными собственными силами.
+      </p>
+    </p>
+</div>
+</div>
+</div>
+<a style="color: black;" href="whitebox.html#in1"><footer class="footer is-primary"  style="background-color: lightgray;">
+  <div class="content has-text-centered">
+    <p id="fot" style="font-size: 24px; text-align: center;">
+      Сделано бубликом, с любовью)
+    </p>
+  </div>
+</footer></a>
+</body>
+</html>
